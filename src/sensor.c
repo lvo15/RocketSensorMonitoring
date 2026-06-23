@@ -26,8 +26,8 @@ void loadDefaulofSensors(Sensor sensors[]){
 
     strcpy(sensors[4].name, "Altitude");
     sensors[4].value = 5000;
-    sensors[2].minLimit = 0;
-    sensors[2].maxLimit = 10000;
+    sensors[4].minLimit = 0;
+    sensors[4].maxLimit = 10000;
 }
 void displaySensors(Sensor sensors[]){
     for (int i = 0; i < MAX_SENSORS; i++){
@@ -39,7 +39,7 @@ void displaySensors(Sensor sensors[]){
     }
 }
 
-int checlAllSensors(Sensor sensors[]){
+int checkAllSensors(Sensor sensors[]){
     int allPassed = 1;
 
     for (int i = 0; i < MAX_SENSORS; i++){

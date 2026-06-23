@@ -13,7 +13,7 @@ int main(){
     int choice;
     Sensor sensors [MAX_SENSORS];
     printf("Staring Rocket...\n");
-    loadDefaultSensors(sensors);
+    loadDefaulofSensors(sensors);
     do {
         displayMenu();
         scanf("%d", &choice);
@@ -27,12 +27,12 @@ int main(){
             int result = checkAllSensors(sensors);
 
             if (result)
-                printf ("Overrall System: Pass\n");
+                printf ("\n=> Overrall System: PASS\n");
             else
-                printf ("Overall Systam: Fail\n");
+                printf ("\n=> Overall System: FAIL\n");
             break;
         case 3:
-            printf("Save Report System.\n");
+            saveReport(sensors);
             break;
         case 4:
             printf("Exit System.\n");

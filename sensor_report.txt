@@ -1,0 +1,7 @@
+Sensor Report
+==============
+Temperature: 75.00 | Limit: 0.00 - 90.00
+Pressure: 100.00 | Limit: 50.00 - 120.00
+Voltage: 12.00 | Limit: 11.00 - 13.00
+Speed: 700.00 | Limit: 0.00 - 1000.00
+Altitude: 5000.00 | Limit: 0.00 - 10000.00
