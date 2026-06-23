@@ -11,7 +11,9 @@ void displayMenu() {
 }
 int main(){
     int choice;
+    Sensor sensors [MAX_SENSORS];
     printf("Staring Rocket...\n");
+    loadDefaultSensors(sensors);
     do {
         displayMenu();
         scanf("%d", &choice);
@@ -19,10 +21,15 @@ int main(){
         switch (choice)
         {
         case 1:
-            printf("View Sensor Data.\n");
+            displaySensors(sensors);
             break;
         case 2:
-            printf("Run System.\n");
+            int result = checkAllSensors(sensors);
+
+            if (result)
+                printf ("Overrall System: Pass\n");
+            else
+                printf ("Overall Systam: Fail\n");
             break;
         case 3:
             printf("Save Report System.\n");
